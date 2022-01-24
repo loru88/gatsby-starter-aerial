@@ -7,14 +7,12 @@ import Header from '../components/Header';
 
 const IndexPage = () => (
   <Layout>
-    <>
       <div id="bg" />
       <div id="overlay" />
       <div id="main">
         <Header />
         <Footer />
       </div>
-    </>
   </Layout>
 );
 
