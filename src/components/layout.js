@@ -18,12 +18,9 @@ const Layout = ({ children, darkText }) => (
     render={data => (
       <>
         <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'Aerial' },
-            { name: 'keywords', content: 'site, web' },
-          ]}
-        >
+          defaultTitle={data.site.siteMetadata.title}
+          >
+          <meta name="description" content="Lorenzo Adinolfi is a Italian Software Engineer and Full Stack Developer" />
           <html lang="en" />
         </Helmet>
         <div id="wrapper" className={darkText ? 'dark-text' : ''}>
